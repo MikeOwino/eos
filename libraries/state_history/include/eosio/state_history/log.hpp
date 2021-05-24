@@ -148,7 +148,7 @@ class state_history_log {
    };
 
    state_history_log(const char* const name, const state_history_config& conf);
-   ~state_history_log();
+   virtual ~state_history_log();
 
    block_num_type begin_block() const {
       block_num_type result = catalog.first_block_num();
