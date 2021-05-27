@@ -78,6 +78,8 @@ class opaque {
       else
          fc::raw::pack(fc::unsigned_int(0));
    }
+
+   size_t data_size() const { return data->size(); }
 };
 
 struct augmented_transaction_trace {
